@@ -1,0 +1,12 @@
+#After we import out data , we start the data analysis.
+
+#First thing we check is if there are missing values in our dataset.
+
+#As we can see in the Plots % Graphs file in second graph we don't have any NAs.
+
+#Correlation check. No multicollinearity 
+
+
+
+
+
