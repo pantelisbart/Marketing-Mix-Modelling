@@ -1,7 +1,9 @@
 # Marketing-Mix-Modelling
-Marketing Mix Modelling based on simulated data
+Marketing Mix Modelling based on simulated data.
 
 In this example of MMM , we will predict sales in order to help a potential client to understand whether their Marketing campaign is actually beneficial for him or not.
+
+It is a simple example of multiple linear regression.
 
 The Data are simulated and contains the following variables:
 
