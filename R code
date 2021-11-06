@@ -25,6 +25,9 @@ summary(model)
 # We conclude into the following variables:
 # Sales ~ TV + Radio + Magazines + Digital
 
+# Our model has R^2= 88%. That means the model has a very good fit in our data.
+
+
 # Interpretation
 # Without any spending on advertising the sales would be 2916 , which comes from organic traffic. 
 # In other words, Organic traffic is any traffic that comes to your site from a search engine, but that isn't paid for.
