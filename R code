@@ -3,7 +3,7 @@
 # First thing we check is if there are missing values in our dataset.
 
 # Checking missing values
-# As we can see in the Plots % Graphs file in second graph we don't have any NAs.
+# As we can see in the Plots & Graphs file in the graph with the name "Missing Values from Dataset", we don't have any NAs.
 library(DataExplorer)
 plot_missing(media)
 
