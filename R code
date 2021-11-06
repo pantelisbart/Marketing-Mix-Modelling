@@ -2,9 +2,50 @@
 
 #First thing we check is if there are missing values in our dataset.
 
+# Checking missing values
 #As we can see in the Plots % Graphs file in second graph we don't have any NAs.
+library(DataExplorer)
+plot_missing(media)
 
-#Correlation check. No multicollinearity 
+
+#After that we will check for multicollinearity. We don't have any among the variables, so we can proceed.
+#Correlation check. 
+corr<-cor(media)
+corrplot::corrplot(corr)
+
+
+# Multiple Linear Regression
+model1 <- lm(Sales ~ ., data = media)
+summary(model1)
+
+#stepwise both
+model<-stepAIC(model1,direction = "both",trace=FALSE)
+summary(model)
+
+#We conclude into the following variables:
+#Sales ~ TV + Radio + Magazines + Digital
+
+#Interpretation
+# Without any spending on advertising the sales would be 2916 , which comes from organic traffic. More specific, Organic traffic is any traffic that comes to your site from a search engine, but that isn't paid for
+
+# Hierarchicaly the focus should be on Radio , Tv and after Digital due to higher coefficient numbers
+
+# If we spent 1000 euro in radio advertising then the sales would increase by 193 and anything else is constant
+
+# if we spent 1000 euro in TV the sales would be added 39 and anything else is constant
+
+#Anything with negative values must be paused such as magazine advertising.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
