@@ -3,12 +3,11 @@ library(car)
 library(DataExplorer)
 
 # After we import our data , we start the data analysis.
-
 # First thing we check is if there are missing values in our dataset.
+
 
 # Checking missing values
 # As we can see in the Plots & Graphs file in the graph with the name "Missing Values from Dataset", we don't have any NAs.
-
 plot_missing(media)
 
 
@@ -34,7 +33,6 @@ summary(model)
 
 # We conclude into the following variables:
 # Sales ~ TV + Radio + Magazines + Digital
-
 # Our model has R^2= 88%. That means the model has a very good fit in our data.
 
 
@@ -57,7 +55,7 @@ par(mfrow=c(2,2))
 plot(model)
 par(mfrow=c(1,1))
 
-#Finally,  we plot the relationship between the dependent variable and independents.
 
+#Finally,  we plot the relationship between the dependent variable and independents.
 #produce added variable plots
 avPlots(model)
