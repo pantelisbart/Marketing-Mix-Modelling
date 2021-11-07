@@ -22,15 +22,15 @@ corrplot::corrplot(corr)
 hist(media$Sales)
 
 
-
-
 # Multiple Linear Regression
 model1 <- lm(Sales ~ ., data = media)
 summary(model1)
 
+
 # Stepwise variable selection
 model<-stepAIC(model1,direction = "both",trace=FALSE)
 summary(model)
+
 
 # We conclude into the following variables:
 # Sales ~ TV + Radio + Magazines + Digital
