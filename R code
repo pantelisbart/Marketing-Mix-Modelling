@@ -18,7 +18,7 @@ corr<-cor(media)
 corrplot::corrplot(corr)
 
 
-#Our dependant variable is normally distributed.
+#Our dependent variable is normally distributed.
 hist(media$Sales)
 
 
