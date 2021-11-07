@@ -1,10 +1,14 @@
+#load packages
+library(car)
+library(DataExplorer)
+
 # After we import our data , we start the data analysis.
 
 # First thing we check is if there are missing values in our dataset.
 
 # Checking missing values
 # As we can see in the Plots & Graphs file in the graph with the name "Missing Values from Dataset", we don't have any NAs.
-library(DataExplorer)
+
 plot_missing(media)
 
 
@@ -12,6 +16,12 @@ plot_missing(media)
 # Correlation check. 
 corr<-cor(media)
 corrplot::corrplot(corr)
+
+
+#Our dependant variable is normally distributed.
+hist(media$Sales)
+
+
 
 
 # Multiple Linear Regression
@@ -42,10 +52,15 @@ summary(model)
 
 
 
+#As with our simple regression, the residuals show no bias, so we can say our model fits the assumption of homoscedasticity.
+par(mfrow=c(2,2))
+plot(model)
+par(mfrow=c(1,1))
 
+#Finally,  we plot the relationship between the dependent variable and independents.
 
-
-
+#produce added variable plots
+avPlots(model)
 
 
 
