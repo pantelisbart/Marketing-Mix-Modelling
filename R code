@@ -33,7 +33,7 @@ summary(model)
 
 # We conclude into the following variables:
 # Sales ~ TV + Radio + Magazines + Digital
-# Our model has R^2= 88%. That means the model has a very good fit in our data.
+# Our model has R^2= 88%. That means the model has a very good fit in our data or in other words the model captures the 88% of the variance present in our data.
 
 
 # Interpretation
@@ -54,6 +54,10 @@ summary(model)
 par(mfrow=c(2,2))
 plot(model)
 par(mfrow=c(1,1))
+
+#Alternatively we can check whether the homoscedasticity exists or not by the following Breusch-Pagan Test.
+bptest(model1)
+#The p value > 0.05 so there is no heteroskedasticity. Our model performs well.
 
 
 #Finally,  we plot the relationship between the dependent variable and independents.
