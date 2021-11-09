@@ -1,6 +1,8 @@
 #load packages
 library(car)
 library(DataExplorer)
+library(MASS)
+
 
 # After we import our data , we start the data analysis.
 # First thing we check is if there are missing values in our dataset.
