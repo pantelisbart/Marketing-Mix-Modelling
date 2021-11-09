@@ -51,16 +51,24 @@ summary(model)
 # Anything with negative values must be paused such as magazine advertising, cause it brings loss in sales.
 
 
-
 #As with our simple regression, the residuals show no bias, so we can say our model fits the assumption of homoscedasticity.
 par(mfrow=c(2,2))
 plot(model)
 par(mfrow=c(1,1))
 
+
 #Alternatively we can check whether the homoscedasticity exists or not by the following Breusch-Pagan Test.
+#The p value > 0.05 so there is no heteroskedasticity. Our model performs well.
 bptest(model1)
 
-#The p value > 0.05 so there is no heteroskedasticity. Our model performs well.
+
+#Residuals plots and check for patterns
+#There is not pattern as it is shown in the plot in the folder with graphs.
+plot(resid(model),fitted(model),main="Residuals plot",col="midnight blue")
+
+
+#Residuals are normally distributed.
+qqnorm(resid(model))
 
 
 #Finally,  we plot the relationship between the dependent variable and independents.
