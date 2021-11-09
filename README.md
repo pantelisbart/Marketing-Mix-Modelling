@@ -7,10 +7,11 @@ It is a simple example of multiple linear regression.
 
 The Data are simulated and contains the following variables:
 
-1) TV spendings
-2) Radio spendings
-3) Magazine - printed spendings
-4) Digital spendings
+1) TV spendings - Predictor.
+2) Radio spendings - Predictor.
+3) Magazine - printed spendings - Predictor.
+4) Digital spendings - Predictor.
+5) Sales - the response variable.
 
 
 
