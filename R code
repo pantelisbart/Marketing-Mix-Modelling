@@ -59,6 +59,7 @@ par(mfrow=c(1,1))
 
 #Alternatively we can check whether the homoscedasticity exists or not by the following Breusch-Pagan Test.
 bptest(model1)
+
 #The p value > 0.05 so there is no heteroskedasticity. Our model performs well.
 
 
