@@ -67,10 +67,6 @@ bptest(model1)
 plot(resid(model),fitted(model),main="Residuals plot",col="midnight blue")
 
 
-#Residuals are normally distributed.
-qqnorm(resid(model))
-
-
 #Finally,  we plot the relationship between the dependent variable and independents.
 #produce added variable plots
 avPlots(model)
