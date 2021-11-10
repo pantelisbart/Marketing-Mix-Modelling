@@ -1,11 +1,11 @@
 # Marketing-Mix-Modelling
 Marketing Mix Modelling example based on simulated data.
 
-In this example of MMM , we will predict sales in order to help our hypothetically client to understand whether their Marketing campaign is actually beneficial for him or not.
+In this example of MMM , we will predict sales in order to help our hypothetical client to understand whether their Marketing campaign is actually beneficial for him or not.
 
 It is a simple example of multiple linear regression.
 
-The Data are simulated and contains the following variables:
+The Data are simulated and contain the following variables:
 
 1) TV spendings - Predictor.
 2) Radio spendings - Predictor.
