@@ -1,0 +1,14 @@
+
+################################################################################################################################################################################
+## Short Description of Marketing Mix Modelling 
+################################################################################################################################################################################
+
+
+Marketing Mix Modeling (MMM) is the use of statistical analysis to estimate the past impact and predict the future impact of various marketing tactics on sales.
+
+The statistical analysis performed by MMM uses multi-linear regression to determine the relationship between the dependent variable, such as sales or engagements, 
+and the independent variables, such as ad spend across channels.
+
+The dependent variable could be Sales or Market Share. 
+The independent variables usually used are Distribution, price, TV spends, outdoor campaigns spends, newspaper and magazine spends, and Consumer promotions information etc. 
+
