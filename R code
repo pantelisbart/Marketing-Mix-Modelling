@@ -56,7 +56,7 @@ summary(model)
 #As with our simple regression, the residuals show no bias, so we can say our model fits the assumption of homoscedasticity.
 par(mfrow=c(2,2))
 plot(model)
-par(mfrow=c(1,1))
+
 
 
 #Alternatively we can check whether the homoscedasticity exists or not by the following Breusch-Pagan Test.
