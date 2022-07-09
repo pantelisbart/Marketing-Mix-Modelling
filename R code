@@ -60,7 +60,7 @@ plot(model)
 
 
 #Alternatively we can check whether the homoscedasticity exists or not by the following Breusch-Pagan Test.
-#The p value > 0.05 so there is no heteroskedasticity. Our model performs well.
+#The p value > 0.05 so there is heteroskedasticity. Our model performs well.
 bptest(model1)
 
 
