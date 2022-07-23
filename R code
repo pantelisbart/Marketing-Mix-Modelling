@@ -75,3 +75,10 @@ plot(resid(model),fitted(model),main="Residuals plot",col="midnight blue")
 #Finally,  we plot the relationship between the dependent variable and independents.
 #produce added variable plots
 avPlots(model)
+
+
+
+
+#plots all the assumption with comments
+library(performance)
+check_model(model)
